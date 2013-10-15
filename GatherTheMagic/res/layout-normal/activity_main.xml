@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/blankcard" >
+    
+    
+    
+    
+    <ImageView 
+        android:id="@+id/randomImage"
+        android:layout_width="339dp"
+        android:layout_height="256dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="23dp"
+        android:background="@drawable/background1"/>
+    
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="225dp"
+        android:layout_height="103dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/gatherlogo"/>
+    
+    <Button 
+        android:id="@+id/searchButton"
+        android:layout_width="345dp"
+        android:layout_height="57dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="315dp"
+        android:background="@drawable/search_button"/>
+    
+    <Button 
+        android:id="@+id/randomButton"
+        android:layout_width="344dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="367dp"
+        android:background="@drawable/random_button"/>
+    
+    <Button 
+        android:id="@+id/savedButton"
+        android:layout_width="344dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="423dp"
+        android:background="@drawable/saved_button"/>
+
+    
+
+</RelativeLayout>

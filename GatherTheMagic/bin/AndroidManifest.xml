@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gatherthemagic"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+    
+    <supports-screens 
+                  android:smallScreens="false"
+                  android:normalScreens="true"
+                  android:largeScreens="true"
+                  android:xlargeScreens="true"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.gatherthemagic.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.gatherthemagic.CardDetailsActivity"
+            android:label="@string/title_activity_card_details" >
+        </activity>
+        <activity
+            android:name="com.example.gatherthemagic.SearchAndBrowseActivity"
+            android:label="@string/title_activity_search_and_browse" >
+        </activity>
+        <activity
+            android:name="com.example.gatherthemagic.ResultsActivity"
+            android:label="@string/title_activity_results" >
+        </activity>
+        <activity
+            android:name="com.example.gatherthemagic.MapActivity"
+            android:label="@string/title_activity_map" >
+        </activity>
+        <activity
+            android:name="com.example.gatherthemagic.PriceActivity"
+            android:label="@string/title_activity_price" >
+        </activity>
+        <activity
+            android:name="com.example.gatherthemagic.LifeTrackerActivity"
+            android:label="@string/title_activity_life_tracker" >
+        </activity>
+    </application>
+
+</manifest>

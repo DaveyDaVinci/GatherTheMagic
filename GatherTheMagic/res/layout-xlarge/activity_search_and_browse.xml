@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchAndBrowseActivity"
+    android:background="@drawable/menubackgroundedited" >
+    
+    <RelativeLayout
+        android:id="@+id/logoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="350dp"
+            android:layout_height="173dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/gatherlogo" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/searchBoxLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoLayout"
+        android:gravity="center">
+        
+        <EditText
+	        android:id="@+id/searchBrowseSearchBox"
+	        android:layout_marginTop="100dp"
+	        android:layout_width="400dp"
+	        android:layout_height="75dp"
+	        android:hint="Enter card name"/>
+    
+	    <Button 
+	        android:id="@+id/searchBrowseButton"
+	        android:layout_width="200dp"
+	        android:layout_height="75dp"
+	        android:layout_marginLeft="50dp"
+	        android:layout_marginTop="100dp"
+	        android:layout_toRightOf="@+id/searchBrowseSearchBox"
+	        android:text="Search"/>
+        
+    	
+    
+    </RelativeLayout>
+     
+	<RelativeLayout 
+	    android:id="@+id/browseLayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:layout_below="@+id/searchBoxLayout">
+	    
+	    
+	    <Spinner 
+        android:id="@+id/browse"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"/>
+    
+    <Spinner 
+        android:id="@+id/browse2"
+        android:layout_width="480dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/browse"
+        />
+	    
+	     
+	 </RelativeLayout>  
+	
+	
+	 <RelativeLayout
+        android:id="@+id/browseButtonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/browseLayout"
+        android:gravity="center">
+	    
+		<Button 
+	        android:id="@+id/browseButton"
+	        android:layout_width="420dp"
+	        android:layout_height="75dp"
+	        android:layout_marginTop="240dp"
+	        android:text="Browse"/>
+	    
+	    
+    </RelativeLayout>
+    
+    
+
+    
+    
+    
+    
+    
+     
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item 
+        android:id="@+id/homeButton"
+        android:icon="@drawable/home"
+        android:showAsAction="always"
+        android:title="Home"/>
+    
+    <item 
+        android:id="@+id/searchButton"
+        android:icon="@drawable/search"
+        android:showAsAction="always"
+        android:title="Search"/>
+    
+    <item
+        android:id="@+id/savedButton"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Saved Decks"/>
+    
+    <item
+        android:id="@+id/mapButton"
+        android:orderInCategory="101"
+        android:showAsAction="never"
+        android:title="Find Shops"/>
+    
+    <item
+        android:id="@+id/priceButton"
+        android:orderInCategory="102"
+        android:showAsAction="never"
+        android:title="Card Prices"/>
+    
+    <item
+        android:id="@+id/lifeTrackerButton"
+        android:orderInCategory="103"
+        android:showAsAction="never"
+        android:title="Life Tracker"/>
+
+</menu>

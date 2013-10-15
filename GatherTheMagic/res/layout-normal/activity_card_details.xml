@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blankcard"
+     >
+
+    <TextView
+        android:id="@+id/cardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="3dp" />
+    
+    <TextView
+        android:id="@+id/cardCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="17dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="3dp" />
+    
+    <ImageView
+        android:id="@+id/cardView"
+        android:layout_width="181dp"
+        android:layout_height="254dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="28dip"
+        />
+    
+    <Button 
+        android:id="@+id/addCard"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"
+        android:layout_toRightOf="@+id/cardView"
+        android:text="Add Card"/>
+    
+    <Button 
+        android:id="@+id/deleteCard"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="210dp"
+        android:layout_toRightOf="@+id/cardView"
+        android:text="Delete"/>
+    
+    <TextView
+        android:id="@+id/cardType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="290dp"/>
+    
+    <TextView
+        android:id="@+id/cardRarity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="17dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="290dp"/>
+    
+    <TextView
+        android:id="@+id/cardText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="330dp"
+        android:textSize="7sp" />
+    
+    <TextView
+        android:id="@+id/cardFlavorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:paddingRight="35dp"
+        android:paddingTop="15dp"
+        android:layout_marginLeft="35dp"
+       	android:layout_below="@+id/cardText"
+       	android:textSize="7sp" />
+    
+    <TextView
+        android:id="@+id/cardArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:textStyle="italic"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp" />
+    
+    <TextView
+        android:id="@+id/cardPower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="17dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp" />
+    
+    
+
+</RelativeLayout>

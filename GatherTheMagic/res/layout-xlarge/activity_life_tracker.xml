@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LifeTrackerActivity"
+    android:background="@drawable/menubackgroundedited" >
+    
+    <RelativeLayout
+        android:id="@+id/logoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        
+         <ImageView
+            android:id="@+id/logo"
+            android:layout_width="350dp"
+            android:layout_height="173dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/gatherlogo" />
+        
+        
+        
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/addPlayerButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/logoLayout">
+         
+        <Button 
+	        android:id="@+id/addPlayerButton"
+	        android:layout_width="250dp"
+	        android:layout_height="75dp"
+	        android:layout_marginTop="70dp"
+	        android:text="Add Player"/>
+        
+        
+        
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/player1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_below="@+id/addPlayerButtonLayout"
+        android:layout_marginTop="80dp"
+        android:text="Player 1" />
+    
+    <Button 
+        android:id="@+id/addButton1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/player1"
+        android:text="+"/>
+    
+    <TextView
+        android:id="@+id/player1Life"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_below="@+id/addButton1"
+        android:layout_marginTop="50dp"
+        android:text="20" />
+    
+    <Button 
+        android:id="@+id/subtractButton1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/player1Life"
+        android:text="-"/>
+    
+    
+    
+    
+    
+    <RelativeLayout
+        android:id="@+id/deletePlayersButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/subtractButton1">
+        
+        <Button 
+        android:id="@+id/deletePlayers"
+         android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="70dp"
+        android:text="Delete Players"/>
+    
+	    
+    
+    </RelativeLayout>
+
+   
+    
+    
+    
+    
+    
+    
+    
+    
+
+</RelativeLayout>
