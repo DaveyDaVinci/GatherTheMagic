@@ -91,9 +91,7 @@ public class SearchAndBrowseActivity extends Activity implements OnItemSelectedL
 				
 			}
 			
-			int length = listOfCardNames.size();
 			
-			Log.i("number of cards", Integer.toString(length));
 			
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
@@ -131,8 +129,8 @@ public class SearchAndBrowseActivity extends Activity implements OnItemSelectedL
 						
 			        case R.id.savedButton:
 			        	Intent startSavedIntent = new Intent(this, ResultsActivity.class);
+						startSavedIntent.putExtra("pagecode", 3);
 						startActivity(startSavedIntent);
-					
 						return true;
 						
 			        case R.id.mapButton:

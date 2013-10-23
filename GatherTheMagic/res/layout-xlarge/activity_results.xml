@@ -23,7 +23,7 @@
     <RelativeLayout
         android:id="@+id/resultsListLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="840dp"
         android:gravity="center"
         android:layout_below="@+id/logoLayout">
 	    
@@ -34,6 +34,30 @@
 	        android:layout_marginTop="40dp"/>
 	    
 	</RelativeLayout>
+	
+    <RelativeLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:layout_below="@+id/resultsListLayout">
+	    
+        <Button 
+        android:id="@+id/resultsActivityNewDeckButton"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:text="Add New Deck"
+        android:visibility="invisible"/>
+        
+        <Button 
+        android:id="@+id/resultsActivityDeleteDeckButton"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:text="Add New Deck"
+        android:visibility="invisible"/>
+        
+    </RelativeLayout>
 
     
     

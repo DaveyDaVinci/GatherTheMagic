@@ -25,7 +25,6 @@
             android:layout_height="310dp"
             
             android:layout_marginTop="38dp"
-            android:background="@drawable/background1"
             android:cropToPadding="true" />
 
         <ImageView

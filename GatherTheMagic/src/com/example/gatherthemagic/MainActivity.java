@@ -11,12 +11,15 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class MainActivity extends Activity implements OnClickListener{
 	
@@ -27,6 +30,8 @@ public class MainActivity extends Activity implements OnClickListener{
 	static Context context;
 	
 	static JSONArray arrayOfCards;
+	
+	static ImageView randomImageView; 
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +51,17 @@ public class MainActivity extends Activity implements OnClickListener{
 		randomButton.setOnClickListener(this);
 		
 		context = this;
+		
+		randomImageView  = (ImageView) findViewById(R.id.randomImage);
+		
+		Random random = new Random();
+		int randomPicId = (random.nextInt(20));
+		
+		String picIdToString = Integer.toString(randomPicId);
+		
+		int id = getResources().getIdentifier("com.example.gatherthemagic:drawable/background" + picIdToString, null, null);
+		randomImageView.setImageResource(id);
+		
 		
 	}
 
@@ -76,8 +92,8 @@ public class MainActivity extends Activity implements OnClickListener{
 					
 		        case R.id.savedButton:
 		        	Intent startSavedIntent = new Intent(this, ResultsActivity.class);
+					startSavedIntent.putExtra("pagecode", 3);
 					startActivity(startSavedIntent);
-				
 					return true;
 					
 		        case R.id.mapButton:
@@ -109,17 +125,18 @@ public class MainActivity extends Activity implements OnClickListener{
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
 		
-		if (v.equals(this.searchButton))
+		if (v.equals(MainActivity.searchButton))
 		{
 			Intent startSearchIntent = new Intent(this, SearchAndBrowseActivity.class);
 			startActivity(startSearchIntent);
 		}
-		else if (v.equals(this.savedButton))
+		else if (v.equals(MainActivity.savedButton))
 		{
 			Intent startSavedIntent = new Intent(this, ResultsActivity.class);
+			startSavedIntent.putExtra("pagecode", 3);
 			startActivity(startSavedIntent);
 		}
-		else if (v.equals(this.randomButton))
+		else if (v.equals(MainActivity.randomButton))
 		{
 			
 			arrayOfCards = new JSONArray();

@@ -13,11 +13,35 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/gatherlogo"/>
     
+    
+    
     <ListView
         android:id="@+id/resultsList"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:layout_below="@+id/logo"
-        android:layout_marginTop="40dp"/>
+        android:layout_marginTop="30dp"/>
+    
+    <Button 
+        android:id="@+id/resultsActivityNewDeckButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultsList"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="65dp"
+        android:text="Add New Deck"
+        android:visibility="invisible"/>
+    
+    <Button 
+        android:id="@+id/resultsActivityDeleteDeckButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultsList"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="65dp"
+        android:text="Delete Deck"
+        android:visibility="invisible"/>
+    
+    
 
 </RelativeLayout>

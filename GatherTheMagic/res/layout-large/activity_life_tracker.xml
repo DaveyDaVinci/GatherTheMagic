@@ -40,42 +40,180 @@
     
     
     
-    
-    <TextView
-        android:id="@+id/player1"
-        android:layout_width="wrap_content"
+    <RelativeLayout 
+        android:id="@+id/playerGroupId"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:layout_below="@+id/addPlayerButtonLayout"
-        android:layout_marginTop="80dp"
-        android:text="Player 1" />
+        android:layout_below="@+id/logoLayout"
+       >
+        
+        <TextView
+	        android:id="@+id/player1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="60dp"
+	        android:layout_marginTop="190dp"
+	        android:text="Player 1" />
+        
+        <TextView
+	        android:id="@+id/player2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/player1"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginTop="190dp"
+	        android:text="Player 2"
+	        android:visibility="invisible" />
+        
+        <TextView
+	        android:id="@+id/player3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/player2"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginTop="190dp"
+	        android:text="Player 3" 
+	        android:visibility="invisible"/>
+        
+        <TextView
+	        android:id="@+id/player4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/player3"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginTop="190dp"
+	        android:text="Player 4"
+	        android:visibility="invisible" />
     
-    <Button 
-        android:id="@+id/addButton1"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/player1"
-        android:text="+"/>
+	    <Button 
+	        android:id="@+id/addButton1"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_marginLeft="60dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_below="@+id/player1"
+	        android:text="+"/>
+	    
+	    <Button 
+	        android:id="@+id/addButton2"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_marginLeft="50dp"
+	        android:layout_toRightOf="@+id/addButton1"
+	        android:layout_marginTop="10dp"
+	        android:layout_below="@+id/player2"
+	        android:text="+"
+	        android:visibility="invisible"/>
+	    
+	    <Button 
+	        android:id="@+id/addButton3"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_marginLeft="50dp"
+	        android:layout_toRightOf="@+id/addButton2"
+	        android:layout_marginTop="10dp"
+	        android:layout_below="@+id/player3"
+	        android:text="+"
+	        android:visibility="invisible"/>
+	    
+	    <Button 
+	        android:id="@+id/addButton4"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_marginLeft="50dp"
+	        android:layout_toRightOf="@+id/addButton3"
+	        android:layout_marginTop="10dp"
+	        android:layout_below="@+id/player4"
+	        android:text="+"
+	        android:visibility="invisible"/>
+	    
+	    <TextView
+	        android:id="@+id/player1Life"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="70dp"
+	        android:layout_below="@+id/addButton1"
+	        android:layout_marginTop="10dp"
+	        android:text="20" />
+	    
+	    <TextView
+	        android:id="@+id/player2Life"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/player1Life"
+	        android:layout_marginLeft="75dp"
+	        android:layout_below="@+id/addButton2"
+	        android:layout_marginTop="10dp"
+	        android:text="20" 
+	        android:visibility="invisible"/>
+	    
+	    <TextView
+	        android:id="@+id/player3Life"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/player2Life"
+	        android:layout_marginLeft="75dp"
+	        android:layout_below="@+id/addButton3"
+	        android:layout_marginTop="10dp"
+	        android:text="20" 
+	        android:visibility="invisible"/>
+	    
+	    <TextView
+	        android:id="@+id/player4Life"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/player3Life"
+	        android:layout_marginLeft="75dp"
+	        android:layout_below="@+id/addButton4"
+	        android:layout_marginTop="10dp"
+	        android:text="20" 
+	        android:visibility="invisible"/>
+	    
+	    <Button 
+	        android:id="@+id/subtractButton1"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_marginLeft="60dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_below="@+id/player1Life"
+	        android:text="-"/>
+	    
+	    <Button 
+	        android:id="@+id/subtractButton2"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_marginLeft="50dp"
+	        android:layout_toRightOf="@+id/subtractButton1"
+	        android:layout_marginTop="10dp"
+	        android:layout_below="@+id/player2Life"
+	        android:text="-"
+	        android:visibility="invisible"/>
+	    
+	    <Button 
+	        android:id="@+id/subtractButton3"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_marginLeft="50dp"
+	        android:layout_toRightOf="@+id/subtractButton2"
+	        android:layout_marginTop="10dp"
+	        android:layout_below="@+id/player3Life"
+	        android:text="-"
+	        android:visibility="invisible"/>
+	    
+	    <Button 
+	        android:id="@+id/subtractButton4"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_marginLeft="50dp"
+	        android:layout_toRightOf="@+id/subtractButton3"
+	        android:layout_marginTop="10dp"
+	        android:layout_below="@+id/player4Life"
+	        android:text="-"
+	        android:visibility="invisible"/>
+        
+        
+    </RelativeLayout>
     
-    <TextView
-        android:id="@+id/player1Life"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="70dp"
-        android:layout_below="@+id/addButton1"
-        android:layout_marginTop="10dp"
-        android:text="20" />
-    
-    <Button 
-        android:id="@+id/subtractButton1"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/player1Life"
-        android:text="-"/>
     
     
     <RelativeLayout
@@ -83,14 +221,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_below="@+id/subtractButton1">
+        android:layout_below="@+id/playerGroupId">
     
 	    <Button 
 	        android:id="@+id/deletePlayers"
-	        android:layout_width="200dp"
+	        android:layout_width="170dp"
 	        android:layout_height="wrap_content"
 	        android:layout_marginTop="120dp"
 	        android:text="Delete Players"/>
+	    
+	    <Button 
+	        android:id="@+id/savePlayerInformation"
+	        android:layout_width="170dp"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/deletePlayers"
+	        android:text="Save Player Info"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginTop="120dp"/>
     
     </RelativeLayout>
     

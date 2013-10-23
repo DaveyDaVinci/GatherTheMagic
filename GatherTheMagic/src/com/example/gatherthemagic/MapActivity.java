@@ -46,8 +46,8 @@ public class MapActivity extends Activity {
 						
 			        case R.id.savedButton:
 			        	Intent startSavedIntent = new Intent(this, ResultsActivity.class);
+						startSavedIntent.putExtra("pagecode", 3);
 						startActivity(startSavedIntent);
-					
 						return true;
 						
 			        case R.id.mapButton:
