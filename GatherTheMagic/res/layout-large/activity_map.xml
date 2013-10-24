@@ -27,23 +27,34 @@
         android:layout_below="@+id/logoLayout"
         android:gravity="center">
         
-        <EditText
-	        android:id="@+id/searchMapBox"
-	        android:layout_marginTop="130dp"
-	        android:layout_width="200dp"
-	        android:layout_height="wrap_content"
-	        android:hint="Enter Zip Code"/>
+        
     
 	    <Button 
 	        android:id="@+id/searchMapButton"
-	        android:layout_width="100dp"
+	        android:layout_width="250dp"
 	        android:layout_height="wrap_content"
-	        android:layout_marginLeft="30dp"
 	        android:layout_marginTop="130dp"
-	        android:layout_toRightOf="@+id/searchMapBox"
-	        android:text="Search"/>
+	        android:text="Get Shops List"/>
    
 	 </RelativeLayout>
+	 
+    <RelativeLayout 
+        android:id="@+id/listViewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchBoxLayout"
+        android:layout_marginTop="40dp"
+        android:gravity="center">
+        
+        <ListView 
+	        android:id="@+id/resultsList"
+	        android:layout_width="match_parent"
+	        android:layout_height="350dp">
+            
+        </ListView>
+    </RelativeLayout>
+	 
+    
     
 
 </RelativeLayout>

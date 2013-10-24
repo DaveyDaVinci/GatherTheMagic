@@ -4,8 +4,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -87,7 +85,7 @@ public class ResultsActivity extends Activity implements OnItemClickListener, On
 		context = this;
 		DECK_NAMES = "decknames";
 		
-		listView = (ListView) findViewById(R.id.resultsList);
+		
 		
 		addDecksButton = (Button) findViewById(R.id.resultsActivityNewDeckButton);
 		addDecksButton.setOnClickListener(this);
@@ -619,7 +617,7 @@ public class ResultsActivity extends Activity implements OnItemClickListener, On
 					SharedPreferences.Editor editor = preferences.edit();
 					
 					try {
-						JSONArray loadedCardsFromSets = new JSONArray(preferences.getString(setName, "[]"));
+						//JSONArray loadedCardsFromSets = new JSONArray(preferences.getString(setName, "[]"));
 						JSONArray loadedSets = new JSONArray(preferences.getString(DECK_NAMES, "[]"));
 						JSONArray newSets = new JSONArray();
 						if (!loadedSets.toString().equals("[]"))

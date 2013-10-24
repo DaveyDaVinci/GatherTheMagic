@@ -6,6 +6,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -39,6 +40,7 @@ public class PriceActivity extends Activity implements OnClickListener{
 	
 	static ProgressDialog progressDialog;
 
+	@SuppressLint("SetJavaScriptEnabled")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -130,11 +132,7 @@ public class PriceActivity extends Activity implements OnClickListener{
 		        protected String doInBackground(String... urls) {
 		            String downloadedPrice = null;
 		            
-		            /*
-		            for (String url : urls) {
-		                downloadedPrice = retrievePrice(url);
-		            }
-		            */
+		            
 		            try{
 		            	downloadedPrice = retrievePrice(urls[0]);
 		            }
